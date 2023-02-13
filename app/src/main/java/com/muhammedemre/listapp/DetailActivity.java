@@ -232,7 +232,7 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onActivityResult(Boolean result) {
                 if(result){
-                    //izin verilirse galeriyi açma
+                    //izin verilirse galeriyi aç
                     Intent intentGalery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     activityResultLauncher.launch(intentGalery);
                 }else{
